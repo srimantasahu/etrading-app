@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.5.0</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.etrading</groupId>
+    <artifactId>client-connector</artifactId>
+    <version>1.0.0</version>
+    <name>client-connector</name>
+    <description>Demo project for Client connector message conversions and enrichments</description>
+
+    <properties>
+        <java.version>21</java.version>
+        <amps.version>5.3.4.0</amps.version>
+        <client.conn.msgs.version>1.0.0</client.conn.msgs.version>
+        <common.msgs.version>1.0.0</common.msgs.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.etrading</groupId>
+            <artifactId>client-conn-msgs</artifactId>
+            <version>${client.conn.msgs.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.etrading</groupId>
+            <artifactId>common-msgs</artifactId>
+            <version>${common.msgs.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.crankuptheamps</groupId>
+            <artifactId>amps-client</artifactId>
+            <version>${amps.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

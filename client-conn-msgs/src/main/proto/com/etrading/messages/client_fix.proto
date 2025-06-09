@@ -1,0 +1,55 @@
+syntax = "proto3";
+package com.etrading.messages;
+
+message QuoteRequest {
+  string requestId = 1;
+  string symbol = 2;
+  string securityType = 3;
+  string side = 4;
+  double quantity = 5;
+  double price = 6;
+  string sender = 7;
+  string target = 8;
+  string timestamp = 9;
+}
+
+message QuoteRequestAck {
+  string requestId = 1;
+  string quoteReqAckId = 2;
+  int32 quoteRequestStatus = 3;
+  string symbol = 4;
+  string securityType = 5;
+}
+
+message Quote {
+  string requestId = 1;
+  string quoteReqAckId = 2;
+  string symbol = 3;
+  string securityType = 4;
+  double bidPrice = 5;
+  double offerPrice = 6;
+}
+
+message QuoteAck {
+  string quoteReqAckId = 1;
+  string executionType = 2;
+  string symbol = 3;
+}
+
+message ExecutionReport {
+  string orderId = 1;
+  string execId = 2;
+  string symbol = 3;
+  string side = 4;
+  double quantity = 5;
+  double price = 6;
+  string execType = 7;
+  string orderStatus = 8;
+}
+
+message ExecutionReportAck {
+  string execId = 1;
+  string orderStatus = 2;
+  string symbol = 3;
+}
+
