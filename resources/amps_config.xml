@@ -173,8 +173,9 @@
     -->
   </Actions>
 
-  <!-- Topic are pulled from an external file -->
+  <!-- Topic are pulled from external files -->
   <Include>amps_topics.xml</Include>
-  
+  <Include>amps_sow_topics.xml</Include>
+
 </AMPSConfig>
 

@@ -1,0 +1,11 @@
+<!-- amps_sow_topics.xml -->
+
+<SOW>
+    <Topic>
+        <Name>quotereqs</Name>
+        <MessageType>json</MessageType>
+        <Key>/QuoteReqID</Key>
+        <FileName>data/%n.dat</FileName>
+    </Topic>
+</SOW>
+
