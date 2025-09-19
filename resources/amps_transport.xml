@@ -1,0 +1,16 @@
+<!-- amps_transport.xml -->
+
+<Transports>
+    <Transport>
+        <Name>any-tcp</Name>
+        <Type>tcp</Type>
+        <InetAddr>0.0.0.0:9007</InetAddr> <!-- Changed the InetAddr to 0.0.0.0 to listen on all interfaces -->
+        <Protocol>amps</Protocol>
+    </Transport>
+    <Transport>
+        <Name>any-ws</Name>
+        <Type>tcp</Type>
+        <InetAddr>9008</InetAddr>
+        <Protocol>websocket</Protocol>
+    </Transport>
+</Transports>
